@@ -1,0 +1,35 @@
+plugins {
+	id 'java'
+	id 'application'
+	id 'maven-publish'
+}
+
+group = "me.modmuss50"
+
+base {
+	archivesName = "devauth"
+}
+
+application {
+	mainClassName = 'me.modmuss50.devauth.Main'
+}
+
+jar {
+	manifest {
+		attributes 'Main-Class': 'me.modmuss50.devauth.Main'
+	}
+}
+
+tasks.withType(JavaCompile) {
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+	options.release = 17
+}
+
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			from components.java
+		}
+	}
+}

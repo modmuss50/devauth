@@ -1,0 +1,45 @@
+{
+  "arguments": {
+    "game": [
+      "--username",
+      "${auth_player_name}",
+      "--uuid",
+      "${auth_uuid}",
+      "--accessToken",
+      "${auth_access_token}",
+      "--clientId",
+      "${clientid}",
+      "--xuid",
+      "${auth_xuid}",
+      "--userType",
+      "${user_type}"
+    ],
+    "jvm": [
+      "-cp",
+      "${classpath}"
+    ]
+  },
+  "assetIndex": {
+    "id": "8",
+    "sha1": "490cf2ad724de5eee868328763b54a932fba7826",
+    "size": 415241,
+    "totalSize": 619689962,
+    "url": "https://piston-meta.mojang.com/v1/packages/490cf2ad724de5eee868328763b54a932fba7826/8.json"
+  },
+  "assets": "8",
+  "id": "devauth",
+  "javaVersion": {
+    "component": "java-runtime-gamma",
+    "majorVersion": 17
+  },
+  "libraries": [
+    {
+      "name": "me.modmuss50:devauth:unspecified"
+    }
+  ],
+  "mainClass": "me.modmuss50.devauth.Main",
+  "minimumLauncherVersion": 21,
+  "releaseTime": "2099-10-11T12:32:46+00:00",
+  "time": "2099-10-11T12:32:46+00:00",
+  "type": "release"
+}
